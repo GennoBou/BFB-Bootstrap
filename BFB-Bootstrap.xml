@@ -1236,38 +1236,6 @@ iframe{
         <div class='col-md-4' id='side'>
           <div class='ps-2 pe-2 mt-2' id='sidebar'>
             <b:section id='sidewidget'>
-              <b:widget id='HTML1' locked='false' title='Author' type='HTML' version='1'>
-                <b:widget-settings>
-                  <b:widget-setting name='content'>&lt;img src=&quot;#&quot; alt=&quot;&quot;
-                    class=&quot;rounded-circle mx-auto d-block&quot; width=&quot;100&quot; height=&quot;100&quot;
-                    /&gt;
-                    &lt;p class=&quot;mt-3 mb-1 text-muted small text-center
-                    font-weight-bold&quot;&gt;Author&lt;/p&gt;
-                    &lt;p class=&quot;mb-2 text-muted small
-                    text-center&quot;&gt;ここにテキストが入ります&lt;/p&gt;
-                    &lt;div class=&quot;d-flex align-items-center justify-content-center&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;&gt;&lt;i
-                    class=&quot;bi bi-twitter pe-1&quot;&gt;&lt;/i&gt;Twitter&lt;/a&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
-                    style=&#39;background-color:#A970FF;&#39;&gt;&lt;i class=&quot;bi bi-twitch
-                    pe-1&quot;&gt;&lt;/i&gt;Twitch&lt;/a&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
-                    style=&#39;background-color:#FF0000;&#39;&gt;&lt;i class=&quot;bi bi-youtube
-                    pe-1&quot;&gt;&lt;/i&gt;YouTube&lt;/a&gt;
-
-                    &lt;/div&gt;</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-                  <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='h5'>
-                      <data:title />
-                    </h2>
-                  </b:if>
-                  <div class='widget-content'>
-                    <data:content />
-                  </div>
-                </b:includable>
-              </b:widget>
               <b:widget id='PopularPosts1' locked='false' title='人気の投稿' type='PopularPosts' version='1'>
                 <b:widget-settings>
                   <b:widget-setting name='numItemsToShow'>6</b:widget-setting>
@@ -1277,7 +1245,7 @@ iframe{
                 </b:widget-settings>
                 <b:includable id='main'>
                   <b:if cond='data:title != &quot;&quot;'>
-                    <h2 class='h5 mt-3'>
+                    <h2 class='h5'>
                       <data:title />
                     </h2>
                   </b:if>
@@ -1455,6 +1423,38 @@ iframe{
                         <span dir='ltr'>(<data:label.count />)</span>
                       </b:if>
                     </b:loop>
+                  </div>
+                </b:includable>
+              </b:widget>
+              <b:widget id='HTML1' locked='false' title='Author' type='HTML' version='1'>
+                <b:widget-settings>
+                  <b:widget-setting name='content'>&lt;img src=&quot;#&quot; alt=&quot;&quot;
+                    class=&quot;rounded-circle mx-auto d-block&quot; width=&quot;100&quot; height=&quot;100&quot;
+                    /&gt;
+                    &lt;p class=&quot;mt-3 mb-1 text-muted small text-center
+                    font-weight-bold&quot;&gt;Author&lt;/p&gt;
+                    &lt;p class=&quot;mb-2 text-muted small
+                    text-center&quot;&gt;ここにテキストが入ります&lt;/p&gt;
+                    &lt;div class=&quot;d-flex align-items-center justify-content-center&quot;&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;&gt;&lt;i
+                    class=&quot;bi bi-twitter pe-1&quot;&gt;&lt;/i&gt;Twitter&lt;/a&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
+                    style=&#39;background-color:#A970FF;&#39;&gt;&lt;i class=&quot;bi bi-twitch
+                    pe-1&quot;&gt;&lt;/i&gt;Twitch&lt;/a&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
+                    style=&#39;background-color:#FF0000;&#39;&gt;&lt;i class=&quot;bi bi-youtube
+                    pe-1&quot;&gt;&lt;/i&gt;YouTube&lt;/a&gt;
+
+                    &lt;/div&gt;</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+                  <b:if cond='data:title != &quot;&quot;'>
+                    <h2 class='h5 mt-3'>
+                      <data:title />
+                    </h2>
+                  </b:if>
+                  <div class='widget-content'>
+                    <data:content />
                   </div>
                 </b:includable>
               </b:widget>
