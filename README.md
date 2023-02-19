@@ -1,3 +1,8 @@
+----
+玄之坊の追記：
+monaka496さんの公開物をBootstrap5に対応させた。
+----
+
 Blogger template BFB(Bootstrap for Blogger)
 
 ### BFB(Bootstrap版)とは？
