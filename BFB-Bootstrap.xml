@@ -1467,7 +1467,8 @@ iframe{
       <!-- フッター -->
       <footer class='pt-3'>
         <p class='text-center mb-0 small text-muted p-0'> Copyright &#169;<data:blog.title />All Rights Reserved. </p>
-        <p class='text-center mb-0 small text-muted'> Designed by<a href='https://www.monaka.dev/'>BFB</a></p>
+        <p class='text-center mb-0 small text-muted'> Designed by <a href='https://www.monaka.dev/'>BFB</a> - Improved by <a href='https://github.com/GennoBou/BFB-Bootstrap'>GennoBou</a>
+        </p>
       </footer>
     </div>
 
