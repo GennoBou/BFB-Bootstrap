@@ -140,21 +140,15 @@ iframe{
             <!-- サイト内検索 -->
             <div itemscope='itemscope' itemtype='https://schema.org/WebSite'>
               <meta expr:content='data:blog.homepageUrl' itemprop='url' />
-              <form class='form-inline my-1' expr:action='data:blog.searchUrl' itemprop='potentialAction' itemscope='itemscope' itemtype='https://schema.org/SearchAction'>
+              <form class='row row-cols-lg-auto g-1 my-1' expr:action='data:blog.searchUrl' itemprop='potentialAction' itemscope='itemscope' itemtype='https://schema.org/SearchAction'>
                 <meta expr:content='data:blog.searchUrl + &quot;?q={q}&quot;' itemprop='target' />
                 <b:attr cond='not data:view.isPreview' name='target' value='_top' />
-                <table class='col'>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <input autocomplete='off' class='form-control w-100' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' itemprop='query-input' name='q' placeholder='このブログを検索' size='20' title='search' type='text' />
-                      </td>
-                      <td>
-                        <input class='btn btn-primary ms-2' expr:value='data:messages.search' title='search' type='submit' />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="col-auto">
+                  <input autocomplete='off' class='form-control w-100' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' itemprop='query-input' name='q' placeholder='このブログを検索' size='20' title='search' type='text' />
+                </div>
+                <div class="col-auto">
+                  <input class='btn btn-primary ms-2' expr:value='data:messages.search' title='search' type='submit' />
+                </div>
               </form>
             </div>
           </div>
