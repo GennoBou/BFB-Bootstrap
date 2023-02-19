@@ -288,7 +288,7 @@ iframe{
                   &quot;<data:post.lastUpdatedISO8601 />&quot;, &quot;description&quot;: &quot;<data:post.snippet />&quot; } </script>
                 <div class='w-100' id='article-content'>
                   <!-- パンくずリストの表示 -->
-                  <div class='col-12'>
+                  <nav aria-label="パンくずリスト" class='col-12'>
                     <ol class='breadcrumb small bg-white p-0 mb-2' itemscope='itemscope' itemtype='http://schema.org/BreadcrumbList'>
                       <li class='breadcrumb-item active' itemprop='itemListElement' itemscope='itemscope' itemtype='http://schema.org/ListItem'>
                         <a expr:href='data:blog.homepageUrl' itemprop='item'>
@@ -309,11 +309,11 @@ iframe{
                           </b:loop>
                         </b:if>
                       </li>
-                      <li class='breadcrumb-item active'>
+                      <li class='breadcrumb-item active' aria-current='page'>
                         <data:post.title />
                       </li>
                     </ol>
-                  </div>
+                  </nav>
                   <!-- 記事タイトルの表示 -->
                   <h1 class='h5 font-weight-bold col-12 mt-2'>
                     <data:post.title />
@@ -329,8 +329,8 @@ iframe{
                     <span id='lastupdatedinfo'>
                       <!-- ここに表示される -->
                     </span>
-                    <script type='text/javascript'> var datalud = &quot;<data:post.lastUpdatedISO8601 />&quot; var udate = new Date(datalud); var month = (&quot;0&quot;+(udate.getMonth() + 1)).slice(-2); //月の表示を2桁にする var date = (&quot;0&quot;+udate.getDate()).slice(-2); //日の表示を2桁にする document.getElementById(&quot;lastupdatedinfo&quot;).innerHTML =
-                      udate.getFullYear() + &quot;/&quot; + month + &quot;/&quot; + date; </script>
+                    <script type='text/javascript'> var datalud = &quot;<data:post.lastUpdatedISO8601 />&quot; ; var udate = new Date(datalud); var month = (&quot;0&quot;+(udate.getMonth() + 1)).slice(-2); var date = (&quot;0&quot;+udate.getDate()).slice(-2); document.getElementById(&quot;lastupdatedinfo&quot;).innerHTML = udate.getFullYear() + &quot;/&quot;
+                      + month + &quot;/&quot; + date; </script>
                     <!-- SNSシェアボタンの表示 -->
                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
                       <div class='m-1 text-center badge position-relative float-start' style='background-color:#1877f2;'>
