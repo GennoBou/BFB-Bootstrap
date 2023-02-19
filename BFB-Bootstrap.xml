@@ -343,8 +343,7 @@ iframe{
                         <a class='stretched-link text-white' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.canonicalUrl + &quot;&amp;t=&quot; + data:post.title' target='_blank'>
                           <i class='bi bi-facebook text-white me-1' /> Share </a>
                       </div>
-                      <div class='m-1 text-center badge position-relative float-start'
-                        style='background-color:#1DA1F2;'>
+                      <div class='m-1 text-center badge position-relative float-start' style='background-color:#1DA1F2;'>
                         <a class='stretched-link text-white' expr:href='&quot;https://twitter.com/intent/tweet?text=&quot; + data:post.title + &quot;&amp;url=&quot; + data:post.canonicalUrl' target='_blank'>
                           <i class='bi bi-twitter text-white me-1' /> Tweet </a>
                       </div>
@@ -580,7 +579,7 @@ iframe{
                       </h3>
                       <div class='mobile-index-arrow'>&amp;rsaquo;</div>
 
-                      <div class='mobile-index-contents'>
+                      <div class='mobile-index-contents clearfix'>
                         <b:if cond='data:post.thumbnailUrl'>
                           <div class='mobile-index-thumbnail'>
                             <div class='Image'>
@@ -595,8 +594,6 @@ iframe{
                           </b:if>
                         </div>
                       </div>
-
-                      <div style='clear: both;' />
                     </a>
 
                     <div class='mobile-index-comment'>
@@ -690,9 +687,8 @@ iframe{
                           <div class='post-header-line-1' />
                         </div>
 
-                        <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+                        <div class='post-body entry-content clearfix' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
                           <data:post.body />
-                          <div style='clear: both;' /> <!-- clear for photos floats -->
                         </div>
 
                         <div class='post-footer'>
@@ -803,9 +799,8 @@ iframe{
 
                   <!-- Then use the post body as the schema.org description, for good G+/FB
                   snippeting. -->
-                  <div class='post-body entry-content' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
+                  <div class='post-body entry-content clearfix' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
                     <data:post.body />
-                    <div style='clear: both;' /> <!-- clear for photos floats -->
                   </div>
 
                   <b:if cond='data:post.hasJumpLink'>
@@ -976,7 +971,7 @@ iframe{
               </b:includable>
               <b:includable id='status-message'>
                 <b:if cond='data:navMessage'>
-                  <div class='status-msg-wrap'>
+                  <div class='status-msg-wrap clearfix'>
                     <div class='status-msg-body'>
                       <data:navMessage />
                     </div>
@@ -988,7 +983,6 @@ iframe{
                       </div>
                     </div>
                   </div>
-                  <div style='clear: both;' />
                 </b:if>
               </b:includable>
               <b:includable id='threaded-comment-form' var='post'>
