@@ -126,15 +126,15 @@ iframe{
             <span class='navbar-toggler-icon' />
           </button>
           <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul class='navbar-nav mr-auto ml-3'>
+            <ul class='navbar-nav me-auto ms-3'>
               <li class='nav-item active px-2'>
-                <a class='nav-link' href='#'><i class='bi bi-info-circle mr-2' />リンク1</a>
+                <a class='nav-link' href='#'><i class='bi bi-info-circle me-2' />リンク1</a>
               </li>
               <li class='nav-item active px-2'>
-                <a class='nav-link' href='#'><i class='bi bi-chat-left-text mr-2' />リンク2</a>
+                <a class='nav-link' href='#'><i class='bi bi-chat-left-text me-2' />リンク2</a>
               </li>
               <li class='nav-item active px-2'>
-                <a class='nav-link' href='#'><i class='bi bi-bootstrap mr-2' />リンク3</a>
+                <a class='nav-link' href='#'><i class='bi bi-bootstrap me-2' />リンク3</a>
               </li>
             </ul>
             <!-- サイト内検索 -->
@@ -150,7 +150,7 @@ iframe{
                         <input autocomplete='off' class='form-control w-100' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' itemprop='query-input' name='q' placeholder='このブログを検索' size='20' title='search' type='text' />
                       </td>
                       <td>
-                        <input class='btn btn-primary ml-2' expr:value='data:messages.search' title='search' type='submit' />
+                        <input class='btn btn-primary ms-2' expr:value='data:messages.search' title='search' type='submit' />
                       </td>
                     </tr>
                   </tbody>
@@ -231,7 +231,7 @@ iframe{
                         </h2>
                       </div>
                       <!-- 投稿日の表示 -->
-                      <div class='ml-3 mb-3'>
+                      <div class='ms-3 mb-3'>
                         <div class='small text-muted'>
                           <b:eval expr='data:this.allBylineItems.timestamp.label + &quot; &quot; + data:post.date' />
                         </div>
@@ -259,7 +259,7 @@ iframe{
                         </h2>
                       </div>
                       <!-- 投稿日の表示 -->
-                      <div class='ml-3 mb-3'>
+                      <div class='ms-3 mb-3'>
                         <div class='small text-muted'>
                           <b:eval
                             expr='data:this.allBylineItems.timestamp.label + &quot; &quot; + data:post.date' />
@@ -331,7 +331,7 @@ iframe{
                       <b:eval expr='data:this.allBylineItems.timestamp.label + &quot; &quot; + data:post.date' />
                     </time>
                     <!-- 更新日の表示 -->
-                    <i class='bi bi-arrow-clockwise ml-1' />
+                    <i class='bi bi-arrow-clockwise ms-1' />
                     <span id='lastupdatedinfo'>
                       <!-- ここに表示される -->
                     </span>
@@ -339,14 +339,14 @@ iframe{
                       udate.getFullYear() + &quot;/&quot; + month + &quot;/&quot; + date; </script>
                     <!-- SNSシェアボタンの表示 -->
                     <b:if cond='data:blog.pageType == &quot;item&quot;'>
-                      <div class='m-1 text-center badge position-relative float-right' style='background-color:#1877f2;'>
+                      <div class='m-1 text-center badge position-relative float-start' style='background-color:#1877f2;'>
                         <a class='stretched-link text-white' expr:href='&quot;http://www.facebook.com/sharer.php?u=&quot; + data:post.canonicalUrl + &quot;&amp;t=&quot; + data:post.title' target='_blank'>
-                          <i class='bi bi-facebook text-white mr-1' /> Share </a>
+                          <i class='bi bi-facebook text-white me-1' /> Share </a>
                       </div>
-                      <div class='m-1 text-center badge position-relative float-right'
+                      <div class='m-1 text-center badge position-relative float-start'
                         style='background-color:#1DA1F2;'>
                         <a class='stretched-link text-white' expr:href='&quot;https://twitter.com/intent/tweet?text=&quot; + data:post.title + &quot;&amp;url=&quot; + data:post.canonicalUrl' target='_blank'>
-                          <i class='bi bi-twitter text-white mr-1' /> Tweet </a>
+                          <i class='bi bi-twitter text-white me-1' /> Tweet </a>
                       </div>
                     </b:if>
                   </div>
@@ -428,7 +428,7 @@ iframe{
                   <a id='comment' />
                   <b:if cond='data:post.allowComments'>
                     <p class='font-weight-bold mt-3'>
-                      <i class='bi bi-chat mr-1' /><data:post.numComments />件のコメント </p>
+                      <i class='bi bi-chat me-1' /><data:post.numComments />件のコメント </p>
 
                     <b:if cond='data:post.commentPagingRequired'>
                       <span class='paging-control-container'>
@@ -1234,7 +1234,7 @@ iframe{
 
         <!-- サイドバー -->
         <div class='col-md-4' id='side'>
-          <div class='pl-2 pr-2 mt-2' id='sidebar'>
+          <div class='ps-2 pe-2 mt-2' id='sidebar'>
             <b:section id='sidewidget'>
               <b:widget id='HTML1' locked='false' title='Author' type='HTML' version='1'>
                 <b:widget-settings>
@@ -1246,14 +1246,14 @@ iframe{
                     &lt;p class=&quot;mb-2 text-muted small
                     text-center&quot;&gt;ここにテキストが入ります&lt;/p&gt;
                     &lt;div class=&quot;d-flex align-items-center justify-content-center&quot;&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ml-2 mr-2&quot;&gt;&lt;i
-                    class=&quot;bi bi-twitter pr-1&quot;&gt;&lt;/i&gt;Twitter&lt;/a&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ml-2 mr-2&quot;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;&gt;&lt;i
+                    class=&quot;bi bi-twitter pe-1&quot;&gt;&lt;/i&gt;Twitter&lt;/a&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
                     style=&#39;background-color:#A970FF;&#39;&gt;&lt;i class=&quot;bi bi-twitch
-                    pr-1&quot;&gt;&lt;/i&gt;Twitch&lt;/a&gt;
-                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ml-2 mr-2&quot;
+                    pe-1&quot;&gt;&lt;/i&gt;Twitch&lt;/a&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;badge badge-primary mb-3 ms-2 me-2&quot;
                     style=&#39;background-color:#FF0000;&#39;&gt;&lt;i class=&quot;bi bi-youtube
-                    pr-1&quot;&gt;&lt;/i&gt;YouTube&lt;/a&gt;
+                    pe-1&quot;&gt;&lt;/i&gt;YouTube&lt;/a&gt;
 
                     &lt;/div&gt;</b:widget-setting>
                 </b:widget-settings>
@@ -1359,7 +1359,7 @@ iframe{
                 </b:includable>
                 <b:includable id='flat'>
                   <div class='dropdown d-grid'>
-                    <button aria-expanded='false' class='btn btn-outline-secondary btn-block text-left m-1' data-bs-toggle='dropdown' id='dropdownMenuButton1' type='button'><i class='bi bi-caret-down-fill' />&#12288;アーカイブを選択</button>
+                    <button aria-expanded='false' class='btn btn-outline-secondary btn-block text-start m-1' data-bs-toggle='dropdown' id='dropdownMenuButton1' type='button'><i class='bi bi-caret-down-fill' />&#12288;アーカイブを選択</button>
                     <ul aria-labelledby='dropdownMenuButton1'
                       class='dropdown-menu overflow-auto w-100' style='height:300px;'>
                       <b:loop values='data:data' var='i'>
