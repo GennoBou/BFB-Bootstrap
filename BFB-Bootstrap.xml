@@ -106,7 +106,196 @@ iframe{
       url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/fonts/bootstrap-icons.woff2') format('woff2');
 }
 
+<Variable name="mPlus1p36" description="M PLUS 1p 36" type="font" default="400 36px M PLUS 1p, sans-serif" hideEditor="true" value="400 36px M PLUS 1p, sans-serif"/>
+<Variable name="mPlusRounded1c36" description="M PLUS Rounded 1c" type="font" default="400 36px M PLUS Rounded 1c, sans-serif" hideEditor="true" value="400 36px M PLUS Rounded 1c, sans-serif"/>
+<Variable name="hannari36" description="Hannari 36" type="font" default="400 36px Hannari, serif" hideEditor="true" value="400 36px Hannari, serif"/>
+<Variable name="kokoro36" description="Kokoro 36" type="font" default="400 36px Kokoro, serif" hideEditor="true" value="400 36px Kokoro, serif"/>
+<Variable name="sawarabiMincho36" description="Sawarabi Mincho 36" type="font" default="400 36px Sawarabi Mincho, serif" hideEditor="true" value="400 36px Sawarabi Mincho, serif"/>
+<Variable name="sawarabiGothic36" description="Sawarabi Gothic 36" type="font" default="400 36px Sawarabi Gothic, sans-serif" hideEditor="true" value="400 36px Sawarabi Gothic, sans-serif"/>
+<Variable name="Nikukyu36" description="Nikukyu 36" type="font" default="400 36px Nikukyu, sans-serif" hideEditor="true" value="400 36px Nikukyu, sans-serif"/>
+<Variable name="nicoMoji36" description="Nico Moji 36" type="font" default="400 36px Nico Moji, sans-serif" hideEditor="true" value="400 36px Nico Moji, sans-serif"/>
+<Variable name="notoSans36" description="Noto Sans JP 36" type="font" default="400 36px Noto Sans JP, sans-serif" hideEditor="true" value="400 36px Noto Sans JP, sans-serif"/>
+<Variable name="notoSerif36" description="Noto Serif JP 36" type="font" default="400 36px Noto Serif JP, serif" hideEditor="true" value="400 36px Noto Serif JP, serif"/>
+<Variable name="kosugi36" description="Kosugi 36" type="font" default="400 36px Kosugi, sans-serif" hideEditor="true" value="400 36px Kosugi, sans-serif"/>
+<Variable name="kosugiMaru36" description="Kosugi Maru 36" type="font" default="400 36px Kosugi Maru, cursive" hideEditor="true" value="400 36px Kosugi Maru, sans-serif"/>
+<Variable name="zenMaruGothic36" description="Zen Maru Gothic 36" type="font" default="400 36px Zen Maru Gothic, sans-serif" hideEditor="true" value="400 36px Zen Maru Gothic, sans-serif"/>
+<Variable name="zenKakuGothic36" description="Zen Kaku Gothic New 36" type="font" default="400 36px Zen Kaku Gothic New, sans-serif" hideEditor="true" value="400 36px Zen Kaku Gothic New, sans-serif"/>
+<Variable name="zenAntique36" description="Zen Antique 36" type="font" default="400 36px Zen Antique, serif" hideEditor="true" value="400 36px Zen Antique, serif"/>
+<Variable name="bizUdpMincho36" description="BIZ UDPMincho 36" type="font" default="400 36px BIZ UDPMincho, serif" hideEditor="true" value="400 36px BIZ UDPMincho, serif"/>
+<Variable name="bizUdGothic36" description="BIZ UDGothic 36" type="font" default="400 36px BIZ UDGothic, sans-serif" hideEditor="true" value="400 36px BIZ UDGothic, sans-serif"/>
+<Variable name="robotoNormal15" description="Roboto Normal 15" type="font" default="15px Roboto, sans-serif" hideEditor="true" value="15px Roboto, sans-serif"/>
+<Variable name="robotoNormal16" description="Roboto Normal 16" type="font" default="16px Roboto, sans-serif" hideEditor="true" value="16px Roboto, sans-serif"/>
+<Variable name="robotoLightItalic15" description="Roboto Light Italic 15" type="font" default="italic 300 15px Roboto, sans-serif" hideEditor="true" value="italic 300 15px Roboto, sans-serif"/>
+<Variable name="robotoBold22" description="Roboto Bold 22" type="font" default="bold 22px Roboto, sans-serif" hideEditor="true" value="bold 22px Roboto, sans-serif"/>
+<Variable name="robotoBold30" description="Roboto Bold 30" type="font" default="bold 30px Roboto, sans-serif" hideEditor="true" value="bold 30px Roboto, sans-serif"/>
+<Variable name="robotoBold45" description="Roboto Bold 45" type="font" default="bold 45px Roboto, sans-serif" hideEditor="true" value="bold 45px Roboto, sans-serif"/>
+
+<Group description="Page Text">
+  <Variable name="body.text.font" description="Font"
+    type="font" default="$(mPlus1p36)" value="36px M PLUS 1p, sans-serif"/>
+  <Variable name="body.text.color" description="Color"
+    type="color" default="#757575" value="#757575"/>
+</Group>
+
+<Group description="Backgrounds">
+  <Variable name="body.background.height" description="Background height"
+    type="length" min="420px" max="640px" default="480px" value="480px"/>
+  <Variable name="body.background" description="Background"
+    type="background" color="$(body.background.color)" default="$(color) none repeat scroll top left" value="$(color) url(https://themes.googleusercontent.com/image?id=L1lcAxxz0CLgsDzixEprHJ2F38TyEjCyE3RSAjynQDks0lT1BDc1OxXKaTEdLc89HPvdB11X9FDw) no-repeat scroll top center /* Credit: Michael Elkan (http://www.offset.com/photos/394244) */;"/>
+  <Variable name="body.background.color" description="Body background color"
+    type="color" default="#eee" value="#eeeeee"/>
+  <Variable name="posts.background.color" description="Post background color"
+    type="color" default="#fff" value="#ffffff"/>
+  <Variable name="body.background.blur" description="Background blur"
+    type="length" min="0px" max="50px" default="0px" value="0px"/>
+</Group>
+
+<Group description="Links">
+  <Variable name="body.link.color" description="Link color"
+    type="color" default="#2196f3" value="#2196f3"/>
+  <Variable name="body.link.visited.color" description="Visited link color"
+    type="color" default="$(body.link.color)" value="#2196f3"/>
+  <Variable name="body.link.hover.color" description="Link Hover Color"
+    type="color" default="$(body.link.color)" value="#2196f3"/>
+</Group>
+
+<Group description="Blog title" selector="div.widget.Header">
+  <Variable name="blog.title.font" description="Font"
+    type="font" default="$(robotoBold45)" value="bold 45px Roboto, sans-serif"/>
+  <Variable name="blog.title.color" description="Color"
+    type="color" default="#fff" value="#ffffff"/>
+  <Variable name="header.icons.color"
+  type="color" description="Background icons color" default="#fff" value="#ffffff"/>
+</Group>
+
+<Group description="Tabs text" selector="div.widget.PageList">
+  <Variable name="tabs.font" description="Font"
+    type="font" family="$(robotoNormal15.family)" size="$(robotoNormal15.size)" default="700 normal $(size) $(family)" value="700 normal $(size) $(family)"/>
+  <Variable name="tabs.color" description="Text color"
+    type="color" default="#ccc" value="#cccccc"/>
+  <Variable name="tabs.selected.color" description="Selected color"
+    type="color" default="#fff" value="#ffffff"/>
+  <Variable name="tabs.overflow.background.color" description="Popup background color"
+    type="color" default="$(posts.background.color)" value="#ffffff"/>
+  <Variable name="tabs.overflow.color" description="Popup text color"
+    type="color" default="$(posts.text.color)" value="#757575"/>
+  <Variable name="tabs.overflow.selected.color" description="Popup selected color"
+    type="color" default="$(posts.title.color)" value="#212121"/>
+</Group>
+
+<Group description="Posts" selector="div.widget.Blog">
+  <Variable name="posts.title.color" description="Post title color"
+    type="color" default="#212121" value="#212121"/>
+  <Variable name="posts.title.font" description="Post title font"
+    type="font" default="$(robotoBold22)" value="bold 22px Roboto, sans-serif"/>
+  <Variable name="posts.stream.title.font" description="Post title stream font"
+    type="font" default="$(robotoBold30)" value="bold 30px Roboto, sans-serif"/>
+  <Variable name="posts.text.font" description="Post text font"
+    type="font" default="$(body.text.font)" value="15px Roboto, sans-serif"/>
+  <Variable name="posts.text.color" description="Post text color"
+    type="color" default="$(body.text.color)" value="#757575"/>
+  <Variable name="posts.byline.color" description="Post byline color"
+    type="color" default="rgba(0, 0, 0, 0.54)" value="rgba(0, 0, 0, 0.54)"/>
+  <Variable name="blockquote.font" description="Blockquote font"
+    type="font" default="$(robotoLightItalic15)" value="italic 300 15px Roboto, sans-serif"/>
+  <Variable name="blockquote.color" description="Blockquote color"
+    type="color" default="#444" value="#444444"/>
+  <Variable name="posts.icons.color"
+    description="Post icons color" type="color" default="#707070" value="#707070"/>
+</Group>
+
+<Group description="Search">
+  <Variable name="search.input.color" description="Input color"
+    type="color" default="$(blog.title.color)" value="#ffffff"/>
+  <Variable name="search.input.font" description="Input font"
+    type="font" default="$(robotoNormal16)" value="16px Roboto, sans-serif"/>
+  <Variable name="search.placeholder.color" description="Placeholder text color"
+    type="color" default="$(blog.title.color)" value="#ffffff"/>
+</Group>
+
+<Group description="Sharing">
+  <Variable name="sharing.background.color"
+    type="color" description="Sharing background color" default="$(posts.background.color)" value="#ffffff"/>
+  <Variable name="sharing.text.color" description="Sharing text color"
+    type="color" default="$(posts.title.color)" value="#212121"/>
+  <Variable name="sharing.icons.color"
+  type="color" description="Sharing icons color" default="$(sharing.text.color)" value="#212121"/>
+</Group>
+
+<Group description="Popular posts" selector="div.widget.PopularPosts">
+  <Variable name="popularposts.background.color"
+    type="color" description="Popular post background color" default="$(body.background.color)" value="#eeeeee"/>
+  <Variable name="popularposts.byline.color"
+    type="color" description="Popular post byline color" default="$(posts.byline.color)" value="rgba(0, 0, 0, 0.54)"/>
+  <Variable name="popularposts.title.color"
+    type="color" description="Popular post title color" default="$(posts.title.color)" value="#212121"/>
+  <Variable name="popularposts.text.color"
+    type="color" description="Popular post text color" default="$(posts.text.color)" value="#757575"/>
+  <Variable name="popularposts.link.color"
+    type="color" description="Popular post link color" default="$(body.link.color)" value="#2196f3"/>
+</Group>
+
+<Group description="Post navigation" selector='div.blog-pager'>
+  <Variable name="posts.navigation.link.color"
+    type="color" description="Post navigation links color" default="$(body.link.color)" value="#2196f3"/>
+  <Variable name="posts.navigation.link.visited.color"
+    type="color" description="Post navigation links visited color" default="$(body.link.visited.color)" value="#2196f3"/>
+  <Variable name="posts.navigation.link.hover.color"
+    type="color" description="Post navigations links hover color" default="$(body.link.hover.color)" value="#2196f3"/>
+</Group>
+
+<Group description="Sidebar" selector="div.sidebar-container">
+  <Variable name="sidebar.backgroundColorTop"
+    type="color" description="Background color (Top)" default="#f7f7f7" value="#ffffff"/>
+  <Variable name="sidebar.backgroundColorTopHD"
+    type="color" description="Background color (Top) - HD" default="rgba(255, 255, 255, 1)" value="#f7f7f7"/>
+  <Variable name="sidebar.backgroundColorBottom"
+    type="color" description="Background color (Bottom)" default="#fff" value="#ffffff"/>
+  <Variable name="sidebar.separator.color"
+    type="color" description="Separator color" default="#ccc" value="#cccccc"/>
+  <Variable name="widget.title.color"
+    type="color" description="Gadget title color" default="#212121" value="#212121"/>
+  <Variable name="sidebar.icons.color"
+    type="color" description="Sidebar icons color" default="#707070" value="#707070"/>
+</Group>
+
+<Group description="Author profile" selector='.widget.Profile'>
+  <Variable name="profile.title.color" description="Profile title color"
+    type="color" default="rgba(0,0,0,0.52)" value="rgba(0,0,0,0.52)"/>
+  <Variable name="profile.text.color" description="Profile text color"
+    type="color" default="rgba(0, 0, 0, 0.54)" value="rgba(0, 0, 0, 0.54)"/>
+  <Variable name="profile.link.color" description="Profile link color"
+    type="color" default="$(posts.title.color)" value="#212121"/>
+</Group>
+
+<Group description="Labels" selector=".widget.Label">
+  <Variable name="labels.text.color"
+    type="color" description="Label text color" default="$(body.link.color)" value="rgba(0,0,0,0.54)"/>
+  <Variable name="labels.background.color"
+    type="color" description="Label background color" red="$(labels.text.color.red)" green="$(labels.text.color.green)" blue="$(labels.text.color.blue)" default="rgba($red, $green, $blue, 0.05)" value="#f7f7f7"/>
+</Group>
+
+<Group description="Attribution" selector=".widget.Attribution">
+  <Variable name="attribution.text.color" description="Attribution text color"
+    type="color" default="$(body.text.color)" value="#757575"/>
+  <Variable name="attribution.link.color" description="Attribution link color"
+    type="color" default="$(body.link.color)" value="#2196f3"/>
+  <Variable name="attribution.icon.color" description="Attribution icon color"
+    type="color" default="#707070" hideEditor="true" value="#707070"/>
+</Group>
+
+<Group description="Widths">
+  <Variable name="sidebar.width" description="Sidebar width"
+    type="length" min="100px" max="1000px" default="284px" value="284px"/>
+  <Variable name="content.width" description="Content width"
+    type="length" min="600px" max="2400px" default="922px" value="922px"/>
+  <Variable name="content.margin" description="Content margin"
+    type="length" min="0px" max="1000px" default="117px" value="117px"/>
+</Group>
+
 ]]></b:skin>
+
+    <!-- Constants -->
 
   </head>
 
